@@ -4,7 +4,7 @@ namespace FizzBuzz
 {
     public class FizzBuzzGame
     {
-        public string CountOff(int input)
+        public static string CountOff(int input)
         {
             if (input % 3 == 0)
             {

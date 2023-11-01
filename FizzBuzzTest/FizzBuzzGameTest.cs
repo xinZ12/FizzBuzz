@@ -9,14 +9,12 @@ namespace FizzBuzzTest
         public void Should_return_number_when_give_normal_case()
         {
             // given
-            FizzBuzzGame game = new FizzBuzzGame();
             const int input = 1;
 
             //when
-            string output = game.CountOff(input);
+            string output = FizzBuzzGame.CountOff(input);
 
             //then
-            //Assert.NotNull(game);
             Assert.Equal("1", output);
         }
 
@@ -28,10 +26,9 @@ namespace FizzBuzzTest
             const int input = 3;
 
             //when
-            string output = game.CountOff(input);
+            string output = FizzBuzzGame.CountOff(input);
 
             //then
-            //Assert.NotNull(game);
             Assert.Equal("Fizz", output);
         }
 
@@ -43,7 +40,7 @@ namespace FizzBuzzTest
             const int input = 5;
 
             //when
-            string output = game.CountOff(input);
+            string output = FizzBuzzGame.CountOff(input);
 
             //then
             Assert.Equal("Buzz", output);
@@ -57,7 +54,7 @@ namespace FizzBuzzTest
             const int input = 15;
 
             //when
-            string output = game.CountOff(input);
+            string output = FizzBuzzGame.CountOff(input);
 
             //then
             Assert.Equal("FizzBuzz", output);
